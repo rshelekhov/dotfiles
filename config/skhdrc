@@ -1,0 +1,31 @@
+# Custom keyboard shortcuts to spawn apps
+
+#
+
+# Docs can be found here:
+
+# https://github.com/koekeishiya/skhd
+
+# open vscode:
+
+ctrl - c : open -a 'Visual Studio Code'
+
+# open browser:
+
+ctrl - a : open -a 'Arc'
+
+# open telegram:
+
+ctrl - t : open -a 'Telegram'
+
+# open slack:
+
+ctrl - s : open -a 'Slack'
+
+# open figma:
+
+ctrl - f : open -a 'Figma'
+
+# Hyper has its own hotkey with `ctrl + ;` in `hyper.js`,
+
+# because this app does not allow `;` as a hotkey for some reason.
