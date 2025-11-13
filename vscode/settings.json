@@ -1,0 +1,156 @@
+{
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
+  "go.addTags": {
+    "tags": "json",
+    "options": "json=omitempty",
+    "promptForTags": false,
+    "transform": "snakecase"
+  },
+  "gopls": {
+    "formatting.gofumpt": false,
+    "usePlaceholders": true,
+    "ui.semanticTokens": true,
+    "ui.codelenses": {
+      "gc_details": false,
+      "regenerate_cgo": false,
+      "generate": true,
+      "tidy": true,
+      "upgrade_dependency": true,
+      "vendor": true
+    },
+    "staticcheck": false // Enable/Disable if not causing memory issues
+  },
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast", "--timeout", "5m", "--fix"],
+  "go.formatTool": "goimports",
+  // disable test caching, race and show coverage (in sync with makefile)
+  "go.testFlags": [
+    "-cover",
+    "-race",
+    "-count=1",
+    "-v",
+    "-benchtime=5s",
+    "-timeout=5m"
+  ],
+  "go.enableCodeLens": {
+    "runtest": true
+  },
+
+  // Go-specific editor settings
+  "[go]": {
+    "editor.insertSpaces": false,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSaveMode": "file",
+    "editor.stickyScroll.enabled": true, // Better navigation for long files
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
+      "source.fixAll": "always"
+    }
+  },
+  // Enhanced inlay hints
+  // "go.inlayHints.compositeLiteralFields": true,
+  // "go.inlayHints.compositeLiteralTypes": true,
+  // "go.inlayHints.functionTypeParameters": true,
+  // "go.inlayHints.parameterNames": true,
+  // "go.inlayHints.rangeVariableTypes": true,
+  // "go.inlayHints.constantValues": true,
+  // Security checks
+  "go.diagnostic.vulncheck": "Imports",
+  "go.toolsEnvVars": {
+    "GOFLAGS": "-buildvcs=false" // Better performance for large repos
+  },
+  "git.ignoreRebaseWarning": true,
+  "git.replaceTagsWhenPull": true,
+  "telemetry.telemetryLevel": "all",
+  "makefile.configureOnOpen": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "explorer.confirmDragAndDrop": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 14,
+  "explorer.confirmDelete": false,
+  "editor.fontFamily": "Monospace, Monaco, 'Courier New'",
+  "workbench.colorTheme": "Ayu Mirage",
+  "database-client.autoSync": true,
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": [
+      {
+        "name": "One Dark italic",
+        "scope": [
+          "comment",
+          "entity.other.attribute-name",
+          "keyword",
+          "markup.underline.link",
+          "storage.modifier",
+          "storage.type",
+          "string.url",
+          "variable.language.super",
+          "variable.language.this"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "One Dark italic reset",
+        "scope": [
+          "keyword.operator",
+          "keyword.other.type",
+          "storage.modifier.import",
+          "storage.modifier.package",
+          "storage.type.built-in",
+          "storage.type.function.arrow",
+          "storage.type.generic",
+          "storage.type.java",
+          "storage.type.primitive"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "workbench.iconTheme": "helium-icon-theme",
+  "tooltitude.pb.includes": ["/usr/local/opt/protobuf/include"],
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-show-information-expiration": "2026-05-05T14:25:21.674Z"
+  },
+  "github.copilot.chat.scopeSelection": true,
+  "workbench.activityBar.location": "hidden",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.showIcons": false,
+  "workbench.editor.labelFormat": "medium",
+  "breadcrumbs.enabled": false,
+  "workbench.statusBar.visible": false,
+  "custom-ui-style.external.imports": [
+    "file:///Users/rs/github.com/dotfiles/vscode/plugins/tab-with-branch.js",
+    "file:///Users/rs/github.com/dotfiles/vscode/plugins/column-position.js"
+  ]
+}
