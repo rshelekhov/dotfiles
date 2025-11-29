@@ -202,5 +202,6 @@
     "file:///Users/rs/github.com/dotfiles/vscode/plugins/column-position.js"
   ],
   "githubLocalActions.dockerDesktopPath": "/Applications/Docker.app",
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "claudeCode.preferredLocation": "panel"
 }
