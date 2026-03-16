@@ -11,6 +11,7 @@
 
 ## gstack
 
+- Workflow template: /Users/rs/github.com/dotfiles/claude/gstack-workflow.md
 - Use the `/browse` skill from gstack for all web browsing.
 - Never use `mcp__claude-in-chrome__*` tools.
 - Available gstack skills: `/plan-ceo-review`, `/plan-eng-review`, `/review`, `/ship`, `/browse`, `/qa`, `/qa-only`, `/setup-browser-cookies`, `/retro`.
