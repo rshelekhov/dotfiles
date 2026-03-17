@@ -8,6 +8,8 @@
 ## Git Branching
 
 - Always run `git pull origin main` on main before creating a new feature branch
+- Never commit directly to main — always create a feature branch
+- Branch naming: `<type>/<short-description>` (e.g. `feat/add-inbox-page`, `fix/auth-redirect`, `chore/update-deps`, `ui/polish-sidebar`)
 
 ## gstack
 
