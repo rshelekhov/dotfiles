@@ -104,7 +104,16 @@
     "code-analysis@mag-claude-plugins": true,
     "bun@mag-claude-plugins": true,
     "orchestration@mag-claude-plugins": true,
-    "claude-code-setup@claude-plugins-official": true
+    "claude-code-setup@claude-plugins-official": true,
+    "codex@openai-codex": true
+  },
+  "extraKnownMarketplaces": {
+    "openai-codex": {
+      "source": {
+        "source": "github",
+        "repo": "openai/codex-plugin-cc"
+      }
+    }
   },
   "outputStyle": "explanatory",
   "alwaysThinkingEnabled": true,
