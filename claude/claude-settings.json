@@ -89,7 +89,6 @@
     "context7@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
     "code-simplifier@claude-plugins-official": true,
-    "superpowers@claude-plugins-official": true,
     "ralph-loop@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
     "playwright@claude-plugins-official": true,
@@ -105,7 +104,10 @@
     "bun@mag-claude-plugins": true,
     "orchestration@mag-claude-plugins": true,
     "claude-code-setup@claude-plugins-official": true,
-    "codex@openai-codex": true
+    "codex@openai-codex": true,
+    "beads@beads-marketplace": true,
+    "swift-lsp@claude-plugins-official": true,
+    "prisma-zod-consistency@prisma-zod-consistency": true
   },
   "extraKnownMarketplaces": {
     "openai-codex": {
@@ -113,9 +115,22 @@
         "source": "github",
         "repo": "openai/codex-plugin-cc"
       }
+    },
+    "beads-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "steveyegge/beads"
+      }
+    },
+    "prisma-zod-consistency": {
+      "source": {
+        "source": "github",
+        "repo": "rshelekhov/prisma-zod-consistency"
+      }
     }
   },
   "outputStyle": "explanatory",
   "alwaysThinkingEnabled": true,
-  "skipDangerousModePermissionPrompt": true
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark-daltonized"
 }
