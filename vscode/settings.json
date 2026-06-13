@@ -95,6 +95,10 @@
 		"editor.formatOnSave": true,
 		"editor.defaultFormatter": "biomejs.biome"
 	},
+	"[prisma]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
 
 	// Enhanced inlay hints
 	// "go.inlayHints.compositeLiteralFields": true,
@@ -210,7 +214,6 @@
 		"vs-kubernetes.minikube-show-information-expiration": "2026-05-05T14:25:21.674Z"
 	},
 	"github.copilot.chat.scopeSelection": true,
-	"workbench.sideBar.location": "right",
 	"workbench.editor.showTabs": "single",
 	"workbench.editor.showIcons": false,
 	"workbench.editor.labelFormat": "medium",
@@ -253,5 +256,7 @@
 		"*.s3db": "${capture}.${extname}-*"
 	},
 	"gitlens.proxy": {},
-	"workbench.activityBar.location": "hidden"
+	"workbench.activityBar.location": "hidden",
+	"security.workspace.trust.untrustedFiles": "open",
+	"prisma.hidePrisma6Prompts": true
 }
