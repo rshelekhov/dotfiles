@@ -19,7 +19,7 @@ sidebar_max_width = 48
 tab_bar_right = [
   { type = "command", command = "~/.config/herdr/claude-usage.sh", interval_seconds = 30, timeout_seconds = 3 },
 ]
-agent_panel_sort = "spaces" # herdr-agent-usage
+agent_panel_sort = "priority"  # attention queue: agents waiting for you first (owned by me, not the plugin)
 # Sidebar as on herdr.dev: status dots, name + caption, blank row between entries
 
 [ui.sidebar.spaces]
