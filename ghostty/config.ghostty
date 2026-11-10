@@ -52,11 +52,11 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = Ayu
-# Поля окна заливаются цветом крайних ячеек (сайдбар/панели herdr), а не фоном темы
+# Fill the window padding with the edge cell colors (herdr sidebar/panes), not the theme background
 window-padding-color = extend-always
-# Остаток пикселей, не влезающий в целую строку, делится на все края, а не копится снизу
+# Spread leftover pixels that do not fit a full row across all edges instead of the bottom
 window-padding-balance = true
-# Окно меняет размер шагами по ячейке — остатка почти не бывает
+# Resize the window in cell steps, so there is almost no leftover
 window-step-resize = true
 
 # BEGIN herdr-agent-usage font

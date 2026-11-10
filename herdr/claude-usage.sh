@@ -1,6 +1,6 @@
 #!/bin/sh
-# Лимиты Claude для строки вкладок herdr (tab_bar_right).
-# Данные берёт из кэша плагина herdr-agent-usage (его наполняет statusLine Claude Code).
+# Claude limits for the herdr tab bar (tab_bar_right).
+# Reads the herdr-agent-usage plugin cache, which the Claude Code statusLine fills.
 f="$HOME/.local/state/herdr/plugins/herdr-agent-usage/claude-statusline.json"
 [ -r "$f" ] || exit 1
 exec jq -r --argjson now "$(date +%s)" '
