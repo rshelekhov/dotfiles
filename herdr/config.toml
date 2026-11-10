@@ -57,18 +57,18 @@ toggle_sidebar = ["prefix+b", "ctrl+shift+b"]
 # Удалить worktree текущего workspace (встроенное: подтверждение, ветку не трогает)
 remove_worktree = ["prefix+shift+u", "ctrl+shift+x"]
 
-# Linear → worktree + claude (плагин rs.linear-worktree)
+# Linear → worktree + claude (плагин rs.linear-kickoff)
 [[keys.command]]
 key = "ctrl+shift+l"
 type = "plugin_action"
-command = "rs.linear-worktree.pick"
-description = "Linear: worktree из задачи"
+command = "rs.linear-kickoff.open"
+description = "Linear: задачи"
 
 [[keys.command]]
 key = "prefix+i"
 type = "plugin_action"
-command = "rs.linear-worktree.pick"
-description = "Linear: worktree из задачи"
+command = "rs.linear-kickoff.open"
+description = "Linear: задачи"
 
 [[keys.command]]
 key = "prefix+t"
