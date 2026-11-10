@@ -56,6 +56,7 @@
 		"editor.defaultFormatter": "biomejs.biome",
 		"editor.codeActionsOnSave": {
 			"quickfix.biome": "explicit",
+			"source.fixAll.biome": "explicit",
 			"source.organizeImports.biome": "explicit"
 		}
 	},
@@ -64,6 +65,7 @@
 		"editor.defaultFormatter": "biomejs.biome",
 		"editor.codeActionsOnSave": {
 			"quickfix.biome": "explicit",
+			"source.fixAll.biome": "explicit",
 			"source.organizeImports.biome": "explicit"
 		}
 	},
@@ -72,6 +74,7 @@
 		"editor.defaultFormatter": "biomejs.biome",
 		"editor.codeActionsOnSave": {
 			"quickfix.biome": "explicit",
+			"source.fixAll.biome": "explicit",
 			"source.organizeImports.biome": "explicit"
 		}
 	},
@@ -80,6 +83,7 @@
 		"editor.defaultFormatter": "biomejs.biome",
 		"editor.codeActionsOnSave": {
 			"quickfix.biome": "explicit",
+			"source.fixAll.biome": "explicit",
 			"source.organizeImports.biome": "explicit"
 		}
 	},
@@ -131,6 +135,9 @@
 	"editor.codeActionsOnSave": {
 		"source.fixAll.biome": "explicit"
 	},
+	// Vertical guide lines connecting matching brackets — makes nested { } easy to trace
+	"editor.guides.bracketPairs": "active",
+	"editor.guides.bracketPairsHorizontal": "active",
 	"files.eol": "\n",
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
@@ -206,8 +213,6 @@
 			}
 		]
 	},
-	"gitlens.ai.model": "vscode",
-	"gitlens.ai.vscode.model": "copilot:gpt-4.1",
 	"workbench.iconTheme": "helium-icon-theme",
 	"tooltitude.pb.includes": ["/usr/local/opt/protobuf/include"],
 	"vs-kubernetes": {
@@ -225,9 +230,9 @@
 	],
 	"githubLocalActions.dockerDesktopPath": "/Applications/Docker.app",
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"js/ts.tsdk.path": "node_modules/typescript/lib",
-	"js/ts.tsdk.promptToUseWorkspaceVersion": true,
-	"js/ts.preferences.importModuleSpecifier": "non-relative",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+	"typescript.preferences.importModuleSpecifier": "non-relative",
 	"claudeCode.preferredLocation": "panel",
 	"kilo-code.allowedCommands": ["git log", "git diff", "git show"],
 	"kilo-code.deniedCommands": [],
