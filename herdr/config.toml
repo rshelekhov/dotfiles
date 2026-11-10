@@ -40,6 +40,10 @@ opencode = [[{ token = "$quota_group", bold = true, dim = false }], ["state_text
 delivery = "system"
 delay_seconds = 1
 
+# No "copied to clipboard" popup: its light background clashes with the theme at the bottom edge
+[ui.toast.clipboard]
+enabled = false
+
 [ui.sound]
 enabled = true
 
