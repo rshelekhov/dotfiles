@@ -62,13 +62,13 @@ remove_worktree = ["prefix+shift+u", "ctrl+shift+x"]
 key = "ctrl+shift+l"
 type = "plugin_action"
 command = "rs.linear-kickoff.open"
-description = "Linear: задачи"
+description = "Linear: issues"
 
 [[keys.command]]
 key = "prefix+i"
 type = "plugin_action"
 command = "rs.linear-kickoff.open"
-description = "Linear: задачи"
+description = "Linear: issues"
 
 [[keys.command]]
 key = "prefix+t"
