@@ -24,7 +24,8 @@ agent_panel_sort = "priority"  # attention queue: agents waiting for you first (
 
 [ui.sidebar.spaces]
 row_gap = 1
-rows = [["state_icon", "workspace"], ["branch", "git_status"]]
+# $issue_state / $issue_title: the Linear issue of the workspace (rs.linear-kickoff); empty elsewhere
+rows = [["state_icon", "workspace", "$issue_state"], [{ token = "$issue_title", dim = true }], ["branch", "git_status"]]
 
 [ui.sidebar.agents]
 row_gap = 1
@@ -73,6 +74,12 @@ key = "prefix+i"
 type = "plugin_action"
 command = "rs.linear-kickoff.open"
 description = "Linear: issues"
+
+[[keys.command]]
+key = "prefix+shift+i"
+type = "plugin_action"
+command = "rs.linear-kickoff.by-id"
+description = "Linear: go to issue"
 
 [[keys.command]]
 key = "prefix+t"

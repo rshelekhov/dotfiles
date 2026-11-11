@@ -107,7 +107,9 @@
     "mnemex@magus": true,
     "claudish@magus": true,
     "multimodel@magus": true,
-    "dev@magus": true
+    "dev@magus": true,
+    "orchestrator@magus": true,
+    "terminal@magus": true
   },
   "extraKnownMarketplaces": {
     "openai-codex": {
